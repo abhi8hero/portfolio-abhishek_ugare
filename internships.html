@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abhishek Ugare | Internships</title>
+<link rel="stylesheet" href="style.css">
+<script defer src="script.js"></script>
+</head>
+<body>
+
+<header class="top-nav">
+  <h2>Abhishek Ugare</h2>
+  <nav>
+    <a onclick="showSection('aboutIntern')">About Internship</a>
+    <a onclick="showSection('experience')">Experience</a>
+    <a onclick="showSection('certificate')">Certificate</a>
+  </nav>
+</header>
+
+<div class="container">
+
+  <!-- GLOBAL SIDEBAR -->
+  <aside class="sidebar" id="sidebar">
+    <div class="menu-toggle right" onclick="toggleSidebar()">☰</div>
+
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="certifications.html">Certifications</a>
+  </aside>
+
+  <!-- INTERNSHIP SELECTOR -->
+  <aside class="sidebar">
+
+    <a onclick="selectIntern(this)"
+       data-about="A 2-month Web Development Internship at Next24tech Technology & Services, conducted from 25 March 2025 to 25 May 2025. This internship was officially recognized and certified by the organization, highlighting my dedication, learning ability, and practical contributions during the program. The certification reflects my consistent efforts, professional conduct, and technical growth throughout the internship period."
+       data-exp="During my internship at Next24tech, I gained hands-on experience in web development, where I worked on real-world tasks that enhanced both my technical and problem-solving skills. I developed a strong understanding of frontend technologies such as HTML, CSS, and JavaScript, and learned how to structure responsive and user-friendly web pages.I actively participated in building and improving web interfaces, understanding project workflows, and applying best practices in coding. This internship also helped me strengthen my logical thinking, debugging skills, and time management, while working in a professional environment. Overall, the experience played a significant role in boosting my confidence and preparing me for future roles in web development and software projects."
+       data-certs="assets/next24tech.png, assets/ol.png">
+       <strong>next24tech</strong> <br>Web Development Internship
+    </a><br><br>
+
+    <a onclick="selectIntern(this)"
+       data-about="A Virtual Internship on Google Cloud Generative AI organized by SmartBridge & SmartInternz, in association with NASSCOM and FutureSkills Prime. This internship focused on building a strong foundation in Generative AI concepts and understanding how modern AI solutions are developed and deployed using cloud platforms like Google Cloud. Through this program, I gained exposure to the fundamentals of artificial intelligence, machine learning, and generative models. The learning structure helped me understand how AI systems generate content, process data, and assist in decision-making across different domains. It also introduced me to the importance of cloud infrastructure in scaling AI applications efficiently. Overall, this internship played an important role in strengthening my interest in AI and cloud technologies. It gave me clarity about how emerging technologies are shaping the future and encouraged me to continue learning and exploring advanced concepts in Generative AI and cloud-based solutions."
+       data-exp="During the internship, I worked through structured learning modules that covered Google Cloud fundamentals, Generative AI concepts, and real-world use cases. The program emphasized both theoretical understanding and practical learning, which helped me connect concepts with real applications. I also learned how cloud services support AI development and deployment. I gained hands-on experience by applying the learned concepts through guided exercises and practical tasks. This improved my ability to understand AI workflows, data handling, and model interaction within a cloud environment. The internship also helped me develop a better problem-solving approach when working with new technologies. Additionally, this experience improved my technical confidence and learning discipline. Working in a virtual internship environment taught me how to manage time effectively, follow structured learning paths, and stay consistent. It was a valuable experience that strengthened my technical foundation and prepared me for future learning and professional opportunities in the field of AI and cloud computing. In this intership first time I introduced with the google noteboke, database and gen ai"
+       data-certs="assets/smartbridge.png, assets/daf.png">
+       <strong>SMARTBRIDGE</strong><br>Google Cloud Gen AI <br>Virtual Internship 
+    </a><br><br>
+
+    <a onclick="selectIntern(this)"
+       data-about="A 10-week Virtual Internship as an Automation Business Analyst Associate through the National Internship Portal, supported by AICTE, EduSkills, and UiPath Academic Alliance. This internship introduced me to the world of business process automation and how automation technologies are used to improve efficiency, accuracy, and productivity in organizations. The program helped me understand the role of a Business Analyst in automation projects, including identifying repetitive processes, analyzing business workflows, and finding opportunities where automation can add value. I learned how automation is not just about technology but also about understanding business needs and designing practical solutions. This internship strengthened my interest in automation and digital transformation. It gave me a clear understanding of how automation tools like UiPath are used in real-world business environments and how automation can reduce manual effort while improving operational performance."
+       data-exp="During the internship, I learned the fundamentals of Robotic Process Automation (RPA) and business process analysis. I explored how to study existing workflows, document requirements, and evaluate processes suitable for automation. This helped me develop a structured and analytical approach to problem-solving. I gained practical exposure to automation concepts such as process mapping, automation lifecycle, and the role of stakeholders in automation projects. The internship also introduced me to how UiPath tools are used to design and manage automated processes, giving me a hands-on understanding of automation platforms. This experience improved my analytical thinking, attention to detail, and understanding of business operations. Working through real-world scenarios helped me see how automation bridges the gap between business and technology. Overall, this internship boosted my confidence and motivated me to further build my skills in automation and RPA-based solutions."
+       data-certs="assets/uipath.png">
+       <strong>UI PATH</strong><br>Automation Business Analyst Associates<br>Virtual Internship 
+    </a><br><br>
+
+    <a onclick="selectIntern(this)"
+       data-about="I successfully completed a 10-week Android Developer Virtual Internship conducted under the National Internship Portal, supported by AICTE, EduSkills, and Google for Developers (India Edu Program). This internship helped me build a strong foundation in Android application development and mobile technologies. The program focused on introducing core Android concepts, tools, and development practices used in real-world mobile applications. I learned how Android apps are designed, built, and maintained while understanding the importance of performance, usability, and scalability in mobile development. This internship strengthened my interest in mobile app development and enhanced my technical confidence. It provided me with structured learning and practical exposure, making it an important step in my journey as an aspiring Android developer."     
+       data-exp="During the internship, I learned essential Android development concepts such as application architecture, activities, layouts, and user interface design. I worked with Android Studio and gained hands-on experience in building and testing Android applications. I explored how to integrate different components of an Android app, manage application flow, and handle user interactions efficiently. The internship also introduced best practices for writing clean code, debugging applications, and improving app performance. This experience improved my problem-solving skills and practical understanding of mobile development. By working on Android-based tasks and exercises, I gained confidence in developing functional applications and developed a strong interest in advancing my skills further in Android and mobile technologies."     
+       data-certs="assets/google.png">
+       <strong>Google for Developers</strong><br>Android Developer<br>Virtual Internship 
+    </a><br><br>
+
+    <a onclick="selectIntern(this)"
+       data-about="I successfully completed a 10-week Cloud Virtual Internship conducted under the National Internship Portal, in collaboration with AICTE, EduSkills, and AWS Academy. This internship introduced me to the fundamentals of cloud computing and helped me understand how modern cloud platforms support scalable and reliable systems. During the internship, my learning was primarily theoretical in nature due to an issue with practical course access. Although I could not perform hands-on labs through the official platform, the program helped me clearly understand the core concepts, architecture, and working principles of cloud technologies. To strengthen my understanding, I proactively continued learning from additional external resources. Through this self-driven effort, I gained a solid grasp of AWS cloud basics, ensuring that I did not miss out on essential knowledge despite the access limitation."
+       data-exp="Throughout the internship, I learned key cloud concepts such as cloud service models, virtualization, storage, networking, security fundamentals, and deployment models. The theoretical modules helped me understand how cloud infrastructure is designed and managed in real-world environments. Since practical access was limited during the internship, I independently explored AWS cloud concepts from alternative learning resources, including documentation and learning platforms. This allowed me to understand the basics of AWS services and how they are commonly used in cloud-based solutions. Overall, this experience strengthened my conceptual foundation in cloud computing and demonstrated my ability to take initiative and continue learning independently. It increased my confidence in cloud fundamentals and motivated me to further build practical expertise in AWS and cloud technologies."
+       data-certs="assets/aws.png">
+       <strong>AWS Cloud</strong><br>Virtual Internship 
+    </a>
+
+  </aside>
+
+  <!-- CONTENT -->
+  <main class="content">
+
+    <div id="aboutIntern" class="section active">
+      <h2>About Internship</h2>
+      <p id="internAbout">Select an internship to view details.</p>
+    </div>
+
+    <div id="experience" class="section">
+      <h2>Experience</h2>
+      <p id="internExp"></p>
+    </div>
+
+    <div id="certificate" class="section">
+      <h2>Certificate</h2>
+    <div class="project-grid" id="internCertGrid">
+  <!-- Certificate cards will be injected here -->
+    </div>
+
+
+    </div>
+
+  </main>
+</div>
+
+<!-- CERTIFICATE MODAL -->
+<div class="cert-modal" id="certModal">
+  <span class="cert-close" onclick="closeCertModal()">&times;</span>
+  <img id="certImage">
+</div>
+
+<footer>
+  <div class="site-footer">
+    ©️ <strong><a href="#">Abhi The Great</a></strong>
+  </div>
+</footer>
+
+</body>
+</html>
