@@ -15,36 +15,42 @@ function showSection(id) {
 function loadProject(p) {
   const data = {
     p1: [
+      "MongoDB NLI is a web-based application designed to allow users to interact with MongoDB databases using simple natural language commands. The project focuses on converting plain English inputs into MongoDB queries, performing CRUD operations, and displaying results in a user-friendly interface.",
+      "React, MongoDB, Node.js",
+      "Users can type commands like Add a new user in users collection or Show all orders from 2023. The system converts these commands into accurate MongoDB queries and displays results in a responsive table. Provides an easy-to-use web interface for database management. Currently running locally / can be deployed on Render.",
+      "reports/mongodb-nli-report.pdf"
+    ],
+    p2: [
       "Take Token is a web-based application created to handle basic token generation and management workflows. The project focuses on authentication logic, token handling, and practical JavaScript implementation for real-world use cases. This project was built to strengthen understanding of authentication concepts, secure access handling, and frontend logic.",
       "HTML, CSS, JavaScript, MongoDB, Node.js",
       "Token generated successfully. And a simple token management web application designed to generate, manage, and track tokens efficiently. Currently running locally / on github / on render. Visit: https://take-tokon.onrender.com",
       "reports/take-token-report.pdf"
     ],
-    p2: [
+    p3: [
       "Movie Finder Plus is a frontend web application that helps users discover movies by searching their titles. It fetches real-time movie data from an external API and displays essential details such as ratings, release year, and plot summaries. This project was built to practice API integration, asynchronous JavaScript, and dynamic UI rendering.",
       "HTML, CSS, JavaScript, OMDb API",
       "Movie details displayed. A web application that allows users to search for movies and view detailed information using a public movie database API. Currently running locally / on github. Visit: https://abhi8hero.github.io/movie-finder-plus/",
       "reports/movie-finder-plus-report.pdf"
     ],
-    p3: [
+    p4: [
       "Arya AI is a web-based chatbot application that allows users to interact with an artificial intelligence system in real time. The project focuses on integrating an AI model into a frontend interface to deliver meaningful and responsive conversations. This project was built to explore AI integration, user experience design, and real-world chatbot implementation.",
       "HTML, CSS, JavaScript, Google Gemini API",
       "AI responses generated for your queries.A smart AI-powered chatbot designed to answer user queries and provide interactive conversations through a clean web interface. Currently running locally / on github / on Hugging face. Visit:https://abhi8hero.github.io/arya-ai/",
       "reports/arya-ai-report.pdf"
     ],
-    p4: [
+    p5: [
       "Career Guidance Assistant is a web-based application that provides career-related guidance based on user interests and goals.The project focuses on delivering structured career suggestions through a simple and interactive interface.This project was built to strengthen frontend logic, user interaction, and real-world problem-solving skills.",
       "HTML, CSS, JavaScript",
       "Your Interested Career responses generated. A web-based career guidance assistant. An intelligent web application designed to help users explore career paths and make informed career decisions. Currently running locally / on Github. Visit: https://abhi8hero.github.io/career-guidance-assistant/",
       "reports/career-guidance-assistant-report.pdf"
     ],
-    p5: [
+    p6: [
       "CV Maker is a frontend-based web application designed to simplify the process of building a professional curriculum vitae. Users can enter their personal and professional details and generate a clean, well-structured CV layout. This project was built to practice DOM manipulation, form handling, and real-world UI design using core web technologies.",
       "HTML, CSS, JavaScript",
       "CV with your information. A simple and efficient web application that helps users create professional CVs quickly and easily. Currently running locally / on github. Visit: https://abhi8hero.github.io/CV-Maker/",
       "reports/cv-maker-report.pdf"
     ],
-    p6: [
+    p7: [
       "Business Boost Agency is a frontend website project designed to represent a digital agency. The goal of this project is to practice real-world website structure, clean UI design, and responsive layouts using core web technologies. This project focuses on simplicity, performance, and professional presentation.",
       "HTML, CSS, JavaScript",
       "A modern, responsive business website built to help agencies and small businesses showcase their services professionally. Currently running locally / on Github. Visit: https://abhi8hero.github.io/Business-Boost-Agency/",
@@ -122,5 +128,6 @@ function selectIntern(el) {
     behavior: "smooth"
   });
 }
+
 
 
