@@ -34,7 +34,7 @@ function loadProject(p) {
     ],
     p4: [
       "Movie Finder Plus is a frontend web application that helps users discover movies by searching their titles. It fetches real-time movie data from an external API and displays essential details such as ratings, release year, and plot summaries. This project was built to practice API integration, asynchronous JavaScript, and dynamic UI rendering.",
-      "HTML, CSS, JavaScript, OMDb API",
+      "React , JavaScript, OMDb API",
       "Movie details displayed. A web application that allows users to search for movies and view detailed information using a public movie database API. Currently running locally / on github. Visit: https://abhi8hero.github.io/movie-finder-plus/",
       "reports/movie-finder-plus-report.pdf"
     ],
