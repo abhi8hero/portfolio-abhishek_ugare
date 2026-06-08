@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abhishek Ugare | Projects</title>
+  <link rel="icon" type="image/png" href="assets/letter-a.png">
+  <link rel="stylesheet" href="styles.css">
+  <script>if(localStorage.getItem('theme')==='dark')document.documentElement.setAttribute('data-theme','dark');</script>
+</head>
+<body>
+
+<!-- ── TOP NAV ── -->
+<header class="top-nav" role="banner">
+  <div class="site-title"><a href="index.html">Abhishek Ugare</a></div>
+  <nav class="nav-links" aria-label="Main navigation">
+    <a href="index.html">Home</a>
+    <a href="projects.html" class="active">Projects</a>
+    <a href="internships.html">Internships</a>
+    <a href="certifications.html">Certifications</a>
+  </nav>
+  <button class="hamburger" id="hamburgerBtn" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode" title="Toggle light/dark mode">
+    <span class="icon-moon" aria-hidden="true">🌙</span>
+    <span class="icon-sun"  aria-hidden="true">☀️</span>
+  </button>
+</header>
+
+<!-- Mobile menu -->
+<nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
+  <a href="index.html">Home</a>
+  <a href="projects.html">Projects</a>
+  <a href="internships.html">Internships</a>
+  <a href="certifications.html">Certifications</a>
+</nav>
+
+<!-- ── PAGE CONTENT ── -->
+<main class="page-wrapper">
+
+  <nav class="back-nav" aria-label="Breadcrumb">
+    <a href="index.html">← Home</a>
+    <span style="color:var(--border);user-select:none">/</span>
+    <a href="projects.html" class="current" aria-current="page">Projects</a>
+  </nav>
+
+  <h1 class="page-title">Projects</h1>
+  <p class="page-subtitle">Tap any project to see details, tech stack, and report.</p>
+
+  <!-- PROJECT GRID -->
+  <div class="card-grid">
+
+    <div class="project-card reveal" onclick="loadProject('p1')" id="card-p1" aria-label="HotelRevAI project">
+      <div class="project-card-img">
+        <img src="assets/hotel.png" alt="HotelRevAI">
+      </div>
+      <div class="project-card-body">
+        <h3>HotelRevAI</h3>
+        <a class="card-link" href="https://github.com/abhi8hero/hotelrevAI" target="_blank" rel="noopener" onclick="event.stopPropagation()">Repo ↗</a>
+      </div>
+    </div>
+
+    <div class="project-card reveal" onclick="loadProject('p2')" id="card-p2" aria-label="MongoDB NLI project">
+      <div class="project-card-img">
+        <img src="assets/mongodb.png" alt="MongoDB NLI">
+      </div>
+      <div class="project-card-body">
+        <h3>MongoDB NLI</h3>
+        <a class="card-link" href="https://mongodb-nli.onrender.com" target="_blank" rel="noopener" onclick="event.stopPropagation()">Live Demo ↗</a>
+      </div>
+    </div>
+
+    <div class="project-card reveal" onclick="loadProject('p3')" id="card-p3" aria-label="Take Token project">
+      <div class="project-card-img">
+        <img src="assets/take-token.png" alt="Take Token">
+      </div>
+      <div class="project-card-body">
+        <h3>Take Token</h3>
+        <a class="card-link" href="https://take-tokon.onrender.com" target="_blank" rel="noopener" onclick="event.stopPropagation()">Live Demo ↗</a>
+      </div>
+    </div>
+
+    <div class="project-card reveal" onclick="loadProject('p4')" id="card-p4" aria-label="Movie Finder Plus project">
+      <div class="project-card-img">
+        <img src="assets/movie-finder-plus.png" alt="Movie Finder Plus">
+      </div>
+      <div class="project-card-body">
+        <h3>Movie Finder Plus</h3>
+        <a class="card-link" href="https://abhi8hero.github.io/movie-finder-plus/" target="_blank" rel="noopener" onclick="event.stopPropagation()">Live Demo ↗</a>
+      </div>
+    </div>
+
+    <div class="project-card reveal" onclick="loadProject('p5')" id="card-p5" aria-label="Arya AI project">
+      <div class="project-card-img">
+        <img src="assets/arya-ai.png" alt="Arya AI">
+      </div>
+      <div class="project-card-body">
+        <h3>Arya AI</h3>
+        <a class="card-link" href="https://abhi8hero.github.io/arya-ai/" target="_blank" rel="noopener" onclick="event.stopPropagation()">Live Demo ↗</a>
+      </div>
+    </div>
+
+    <div class="project-card reveal" onclick="loadProject('p6')" id="card-p6" aria-label="Career Advice project">
+      <div class="project-card-img">
+        <img src="assets/career-advice.png" alt="Career Advice">
+      </div>
+      <div class="project-card-body">
+        <h3>Career Advice</h3>
+        <a class="card-link" href="https://abhi8hero.github.io/career-guidance-assistant/" target="_blank" rel="noopener" onclick="event.stopPropagation()">Live Demo ↗</a>
+      </div>
+    </div>
+
+    <div class="project-card reveal" onclick="loadProject('p7')" id="card-p7" aria-label="CV Maker project">
+      <div class="project-card-img">
+        <img src="assets/cv-maker.png" alt="CV Maker">
+      </div>
+      <div class="project-card-body">
+        <h3>CV Maker</h3>
+        <a class="card-link" href="https://abhi8hero.github.io/CV-Maker/" target="_blank" rel="noopener" onclick="event.stopPropagation()">Live Demo ↗</a>
+      </div>
+    </div>
+
+    <div class="project-card reveal" onclick="loadProject('p8')" id="card-p8" aria-label="BBDMA project">
+      <div class="project-card-img">
+        <img src="assets/BBDMA.png" alt="BBDMA">
+      </div>
+      <div class="project-card-body">
+        <h3>BBDMA</h3>
+        <a class="card-link" href="https://abhi8hero.github.io/Business-Boost-Agency/" target="_blank" rel="noopener" onclick="event.stopPropagation()">Live Demo ↗</a>
+      </div>
+    </div>
+
+  </div><!-- /card-grid -->
+
+  <!-- PROJECT DETAIL PANEL -->
+  <div class="project-detail" id="projectDetail" role="region" aria-live="polite">
+    <div class="project-detail-header">
+      <h2 id="detailTitle">Project Details</h2>
+      <button class="detail-close" onclick="closeProjectDetail()" aria-label="Close details">✕</button>
+    </div>
+    <div class="detail-tabs" role="tablist">
+      <button class="detail-tab active" role="tab" aria-selected="true"  onclick="switchTab(this,'paneAbout')">About</button>
+      <button class="detail-tab"        role="tab" aria-selected="false" onclick="switchTab(this,'paneTech')">Tech Stack</button>
+      <button class="detail-tab"        role="tab" aria-selected="false" onclick="switchTab(this,'paneOutput')">Output</button>
+      <button class="detail-tab"        role="tab" aria-selected="false" onclick="switchTab(this,'paneReport')">Report</button>
+    </div>
+    <div class="detail-pane active" id="paneAbout"><p id="detailDesc"></p></div>
+    <div class="detail-pane" id="paneTech"><p id="detailTech"></p></div>
+    <div class="detail-pane" id="paneOutput"><p id="detailOutput"></p></div>
+    <div class="detail-pane" id="paneReport">
+      <a class="detail-report-link" id="detailReport" href="#" target="_blank" rel="noopener">📄 View Project Report (PDF)</a>
+    </div>
+  </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <p>© <strong><a href="index.html">Abhi The Great</a></strong></p>
+</footer>
+
+<script src="script.js"></script>
+<script>
+/* ── PROJECT DATA ── */
+var projects = {
+  p1: {
+    title: 'HotelRevAI',
+    desc: 'HotelRevAI is a data-driven project developed as part of the Infosys Springboard Data Visualisation Internship 6.0. This project focuses on transforming raw hotel data into meaningful insights that help in improving revenue strategies, occupancy rates, and overall business performance. It is a team project, where collaboration, idea-sharing, and collective problem-solving played a key role in delivering impactful dashboards and analysis.',
+    tech: 'Power BI',
+    output: 'Successfully completed as a team effort — each member contributed to data cleaning, dashboard design, insight generation, and presentation. Collaboration and communication were key factors in achieving the final outcome.',
+    report: 'reports/hotelrevai-report.pdf'
+  },
+  p2: {
+    title: 'MongoDB NLI',
+    desc: 'MongoDB NLI is a web-based application designed to allow users to interact with MongoDB databases using simple natural language commands. The project focuses on converting plain English inputs into MongoDB queries, performing CRUD operations, and displaying results in a user-friendly interface.',
+    tech: 'React, MongoDB, Node.js',
+    output: 'Users can type commands like "Add a new user in users collection" or "Show all orders from 2023". The system converts these commands into accurate MongoDB queries and displays results in a responsive table.',
+    report: 'reports/mongodb-nli-report.pdf'
+  },
+  p3: {
+    title: 'Take Token',
+    desc: 'Take Token is a web-based application created to handle basic token generation and management workflows. The project focuses on authentication logic, token handling, and practical JavaScript implementation for real-world use cases.',
+    tech: 'HTML, CSS, JavaScript, MongoDB, Node.js',
+    output: 'A simple token management web application designed to generate, manage, and track tokens efficiently. Live at: https://take-tokon.onrender.com',
+    report: 'reports/take-token-report.pdf'
+  },
+  p4: {
+    title: 'Movie Finder Plus',
+    desc: 'Movie Finder Plus is a frontend web application that helps users discover movies by searching their titles. It fetches real-time movie data from an external API and displays essential details such as ratings, release year, and plot summaries.',
+    tech: 'HTML, CSS, JavaScript, OMDb API',
+    output: 'A web application that allows users to search for movies and view detailed information using a public movie database API. Live at: https://abhi8hero.github.io/movie-finder-plus/',
+    report: 'reports/movie-finder-plus-report.pdf'
+  },
+  p5: {
+    title: 'Arya AI',
+    desc: 'Arya AI is a web-based chatbot application that allows users to interact with an artificial intelligence system in real time. The project focuses on integrating an AI model into a frontend interface to deliver meaningful and responsive conversations.',
+    tech: 'HTML, CSS, JavaScript, Google Gemini API',
+    output: 'A smart AI-powered chatbot designed to answer user queries and provide interactive conversations through a clean web interface. Live at: https://abhi8hero.github.io/arya-ai/',
+    report: 'reports/arya-ai-report.pdf'
+  },
+  p6: {
+    title: 'Career Advice',
+    desc: 'Career Guidance Assistant is a web-based application that provides career-related guidance based on user interests and goals. The project focuses on delivering structured career suggestions through a simple and interactive interface.',
+    tech: 'HTML, CSS, JavaScript',
+    output: 'An intelligent web application designed to help users explore career paths and make informed career decisions. Live at: https://abhi8hero.github.io/career-guidance-assistant/',
+    report: 'reports/career-guidance-assistant-report.pdf'
+  },
+  p7: {
+    title: 'CV Maker',
+    desc: 'CV Maker is a frontend-based web application designed to simplify the process of building a professional curriculum vitae. Users can enter their personal and professional details and generate a clean, well-structured CV layout.',
+    tech: 'HTML, CSS, JavaScript',
+    output: 'A simple and efficient web application that helps users create professional CVs quickly and easily. Live at: https://abhi8hero.github.io/CV-Maker/',
+    report: 'reports/cv-maker-report.pdf'
+  },
+  p8: {
+    title: 'BBDMA',
+    desc: 'Business Boost Agency is a frontend website project designed to represent a digital agency. The goal of this project is to practice real-world website structure, clean UI design, and responsive layouts using core web technologies.',
+    tech: 'HTML, CSS, JavaScript',
+    output: 'A modern, responsive business website built to help agencies and small businesses showcase their services professionally. Live at: https://abhi8hero.github.io/Business-Boost-Agency/',
+    report: 'reports/BBDMA-report.pdf'
+  }
+};
+
+var activeCard = null;
+
+function loadProject(id) {
+  var p = projects[id];
+  if (!p) return;
+
+  // Toggle: click same card again to close
+  var detail = document.getElementById('projectDetail');
+  if (activeCard === id && detail.classList.contains('open')) {
+    closeProjectDetail();
+    return;
+  }
+
+  // Remove active from all cards
+  document.querySelectorAll('.project-card').forEach(function(c) {
+    c.classList.remove('active');
+  });
+  document.getElementById('card-' + id).classList.add('active');
+
+  // Populate detail panel
+  document.getElementById('detailTitle').textContent  = p.title;
+  document.getElementById('detailDesc').textContent   = p.desc;
+  document.getElementById('detailTech').textContent   = p.tech;
+  document.getElementById('detailOutput').textContent = p.output;
+  document.getElementById('detailReport').href        = p.report;
+
+  // Reset tabs to first
+  switchTab(document.querySelector('.detail-tab'), 'paneAbout');
+
+  detail.classList.add('open');
+  activeCard = id;
+
+  // Smooth scroll to panel
+  setTimeout(function() {
+    detail.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }, 100);
+}
+
+function closeProjectDetail() {
+  document.getElementById('projectDetail').classList.remove('open');
+  document.querySelectorAll('.project-card').forEach(function(c) {
+    c.classList.remove('active');
+  });
+  activeCard = null;
+}
+
+function switchTab(btn, paneId) {
+  // Deactivate all tabs and panes
+  document.querySelectorAll('.detail-tab').forEach(function(t) {
+    t.classList.remove('active');
+    t.setAttribute('aria-selected', 'false');
+  });
+  document.querySelectorAll('.detail-pane').forEach(function(p) {
+    p.classList.remove('active');
+  });
+  // Activate selected
+  btn.classList.add('active');
+  btn.setAttribute('aria-selected', 'true');
+  document.getElementById(paneId).classList.add('active');
+}
+</script>
+</body>
+</html>

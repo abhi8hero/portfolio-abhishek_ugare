@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abhishek Ugare | Portfolio</title>
+  <link rel="icon" type="image/png" href="assets/letter-a.png">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Prevent flash of wrong theme -->
+  <script>if(localStorage.getItem('theme')==='dark')document.documentElement.setAttribute('data-theme','dark');</script>
+</head>
+<body>
+
+<!-- ── TOP NAV ── -->
+<header class="top-nav" role="banner">
+  <div class="site-title"><a href="index.html">Abhishek Ugare</a></div>
+
+  <!-- Desktop links -->
+  <nav class="nav-links" aria-label="Section navigation">
+    <a href="#about">About Me</a>
+    <a href="#academic">Academic</a>
+    <a href="#skills">Skills</a>
+    <a href="#resume">Resume</a>
+    <a href="#contact">Contact</a>
+    <a href="projects.html">Projects</a>
+    <a href="internships.html">Internships</a>
+    <a href="certifications.html">Certifications</a>
+  </nav>
+
+  <!-- Hamburger -->
+  <button class="hamburger" id="hamburgerBtn" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <!-- Theme toggle -->
+  <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode" title="Toggle light/dark mode">
+    <span class="icon-moon" aria-hidden="true">🌙</span>
+    <span class="icon-sun"  aria-hidden="true">☀️</span>
+  </button>
+</header>
+
+<!-- Mobile menu -->
+<nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
+  <a href="#about">About Me</a>
+  <a href="#academic">Academic</a>
+  <a href="#skills">Skills</a>
+  <a href="#resume">Resume</a>
+  <a href="#contact">Contact</a>
+  <div class="menu-divider"></div>
+  <a href="projects.html">Projects</a>
+  <a href="internships.html">Internships</a>
+  <a href="certifications.html">Certifications</a>
+</nav>
+
+<!-- ── PAGE CONTENT ── -->
+<main class="page-wrapper" id="main-content">
+
+  <!-- ABOUT -->
+  <section id="about" class="content-section reveal">
+    <h2 class="section-heading">About Me</h2>
+    <div class="about-layout">
+      <div class="about-photo" aria-hidden="true">
+        <img src="assets/profile.png" alt="Abhishek Ugare profile photo">
+      </div>
+      <div class="about-text">
+        <p><strong>Abhishek Sachin Ugare</strong></p>
+        <p>Hello, I am Abhishek, and I am from Ashta. My current role is a student. Reading, writing, and storytelling are my hobbies and interests. I enjoy these activities. Creativity, problem-solving, and deep thinking are my strengths, and my unique ability is that I never quit any challenge.</p>
+        <p>I have a deep passion for storytelling, which allows me to explore fascinating worlds and bring compelling characters to life. Beyond writing, I enjoy delving into topics like technology and mythology, blending them to craft unique and imaginative ideas. I am always eager to learn and challenge myself, whether by mastering new skills or pursuing ambitious goals.</p>
+        <p>With a love for innovation and a touch of boldness, I aspire to leave a lasting impact through my work and ideas. Completing my 12th grade is my most recent academic accomplishment. Currently, I am pursuing a B.Tech program in computer engineering. I see myself growing into a powerful person in my field in the future.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACADEMIC -->
+  <section id="academic" class="content-section reveal">
+    <h2 class="section-heading">Academic Qualifications</h2>
+    <div class="mt-2">
+      <div class="academic-item">
+        <h3>B.Tech — Computer Science and Engineering</h3>
+        <p>Shri Balasaheb Mane Shikshan Prasarak Mandal's Ashokrao Mane Group Of Institutions</p>
+        <p>2023 – 2027 (pursuing)</p>
+      </div>
+      <div class="academic-item">
+        <h3>12th HSC Board — Science</h3>
+        <p>Annasaheb Dange Public School and Junior College, Ashta</p>
+        <p>Grade: 61.83% &nbsp;|&nbsp; 2021 – 2023</p>
+      </div>
+      <div class="academic-item">
+        <h3>10th SSC Board</h3>
+        <p>Vilasrao Shinde Secondary and Higher Secondary School, Ashta</p>
+        <p>Grade: 80.40% &nbsp;|&nbsp; 2021</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="content-section reveal">
+    <h2 class="section-heading">Skills</h2>
+    <div class="skills-grid">
+      <span class="skill-tag">Data Analysis</span>
+      <span class="skill-tag">Creative Strategy</span>
+      <span class="skill-tag">UI Designing</span>
+      <span class="skill-tag">Artificial Intelligence (AI)</span>
+      <span class="skill-tag">HTML</span>
+      <span class="skill-tag">CSS</span>
+      <span class="skill-tag">JavaScript</span>
+      <span class="skill-tag">C &amp; C++</span>
+      <span class="skill-tag">Tools Adaptability</span>
+      <span class="skill-tag">Logical Thinking</span>
+      <span class="skill-tag">Ethical Thinking</span>
+    </div>
+  </section>
+
+  <!-- RESUME -->
+  <section id="resume" class="content-section reveal">
+    <h2 class="section-heading">Resume / CV</h2>
+    <p>My main strength is that I learn fast and improve continuously. Whatever I didn't know, I learned by building and fixing.</p>
+    <p class="mt-1">This CV shows what I've done so far, but my real value is how quickly I can adapt and contribute once I'm given responsibility.</p>
+    <a class="resume-link" href="reports/cv.pdf" target="_blank" rel="noopener">
+      📃 View Resume (PDF)
+    </a>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="content-section reveal">
+    <h2 class="section-heading">Contact</h2>
+    <ul class="contact-list">
+      <li>📧 <a href="mailto:abhishekugare1289@gmail.com">abhishekugare1289@gmail.com</a></li>
+      <li>🔗 <a href="https://www.linkedin.com/in/abhishek-ugare-a289s85k" target="_blank" rel="noopener">linkedin.com/in/abhishek-ugare-a289s85k</a></li>
+      <li>💻 <a href="https://github.com/abhi8hero" target="_blank" rel="noopener">github.com/abhi8hero</a></li>
+    </ul>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <p>© <strong><a href="index.html">Abhi The Great</a></strong></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abhishek Ugare | Internships</title>
+  <link rel="icon" type="image/png" href="assets/letter-a.png">
+  <link rel="stylesheet" href="styles.css">
+  <script>if(localStorage.getItem('theme')==='dark')document.documentElement.setAttribute('data-theme','dark');</script>
+</head>
+<body>
+
+<!-- ── TOP NAV ── -->
+<header class="top-nav" role="banner">
+  <div class="site-title"><a href="index.html">Abhishek Ugare</a></div>
+  <nav class="nav-links" aria-label="Main navigation">
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="internships.html" class="active">Internships</a>
+    <a href="certifications.html">Certifications</a>
+  </nav>
+  <button class="hamburger" id="hamburgerBtn" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode" title="Toggle light/dark mode">
+    <span class="icon-moon" aria-hidden="true">🌙</span>
+    <span class="icon-sun"  aria-hidden="true">☀️</span>
+  </button>
+</header>
+
+<!-- Mobile menu -->
+<nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
+  <a href="index.html">Home</a>
+  <a href="projects.html">Projects</a>
+  <a href="internships.html">Internships</a>
+  <a href="certifications.html">Certifications</a>
+</nav>
+
+<!-- ── PAGE CONTENT ── -->
+<main class="page-wrapper">
+
+  <nav class="back-nav" aria-label="Breadcrumb">
+    <a href="index.html">← Home</a>
+    <span style="color:var(--border);user-select:none">/</span>
+    <a href="internships.html" class="current" aria-current="page">Internships</a>
+  </nav>
+
+  <h1 class="page-title">Internships</h1>
+  <p class="page-subtitle">Tap an internship to expand details and certificates.</p>
+
+  <!-- INTERNSHIP ACCORDION LIST -->
+  <div class="intern-list" id="internList">
+
+    <!-- ── INTERNSHIP 1: next24tech ── -->
+    <div class="intern-item reveal" id="intern-i1">
+      <button class="intern-trigger" onclick="toggleIntern('i1')" aria-expanded="false" aria-controls="body-i1">
+        <div class="intern-trigger-text">
+          <strong>next24tech</strong>
+          <span>Web Development Internship · Mar–May 2025</span>
+        </div>
+        <span class="intern-chevron" aria-hidden="true">▾</span>
+      </button>
+      <div class="intern-body" id="body-i1" role="region">
+        <div class="intern-tabs" role="tablist">
+          <button class="intern-tab active" role="tab" onclick="switchInternTab(this,'i1','about')">About</button>
+          <button class="intern-tab"        role="tab" onclick="switchInternTab(this,'i1','exp')">Experience</button>
+          <button class="intern-tab"        role="tab" onclick="switchInternTab(this,'i1','certs')">Certificates</button>
+        </div>
+        <div class="intern-pane active" id="i1-about">
+          <p>A 2-month Web Development Internship at Next24tech Technology &amp; Services, conducted from 25 March 2025 to 25 May 2025. This internship was officially recognised and certified by the organisation, highlighting my dedication, learning ability, and practical contributions during the program. The certification reflects my consistent efforts, professional conduct, and technical growth throughout the internship period.</p>
+        </div>
+        <div class="intern-pane" id="i1-exp">
+          <p>During my internship at Next24tech, I gained hands-on experience in web development, where I worked on real-world tasks that enhanced both my technical and problem-solving skills. I developed a strong understanding of frontend technologies such as HTML, CSS, and JavaScript, and learned how to structure responsive and user-friendly web pages.</p>
+          <p style="margin-top:0.6rem">I actively participated in building and improving web interfaces, understanding project workflows, and applying best practices in coding. This internship also helped me strengthen my logical thinking, debugging skills, and time management, while working in a professional environment.</p>
+        </div>
+        <div class="intern-pane" id="i1-certs">
+          <div class="cert-gallery">
+            <div class="cert-thumb" onclick="openImgModal('assets/next24tech.png')">
+              <img src="assets/next24tech.png" alt="next24tech Certificate" loading="lazy">
+              <p>Internship Certificate</p>
+            </div>
+            <div class="cert-thumb" onclick="openImgModal('assets/ol.png')">
+              <img src="assets/ol.png" alt="Certificate" loading="lazy">
+              <p>Completion Letter</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── INTERNSHIP 2: SmartBridge ── -->
+    <div class="intern-item reveal" id="intern-i2">
+      <button class="intern-trigger" onclick="toggleIntern('i2')" aria-expanded="false" aria-controls="body-i2">
+        <div class="intern-trigger-text">
+          <strong>SmartBridge</strong>
+          <span>Google Cloud Generative AI · Virtual Internship</span>
+        </div>
+        <span class="intern-chevron" aria-hidden="true">▾</span>
+      </button>
+      <div class="intern-body" id="body-i2" role="region">
+        <div class="intern-tabs" role="tablist">
+          <button class="intern-tab active" role="tab" onclick="switchInternTab(this,'i2','about')">About</button>
+          <button class="intern-tab"        role="tab" onclick="switchInternTab(this,'i2','exp')">Experience</button>
+          <button class="intern-tab"        role="tab" onclick="switchInternTab(this,'i2','certs')">Certificates</button>
+        </div>
+        <div class="intern-pane active" id="i2-about">
+          <p>A Virtual Internship on Google Cloud Generative AI organised by SmartBridge &amp; SmartInternz, in association with NASSCOM and FutureSkills Prime. This internship focused on building a strong foundation in Generative AI concepts and understanding how modern AI solutions are developed and deployed using cloud platforms like Google Cloud.</p>
+          <p style="margin-top:0.6rem">Through this program, I gained exposure to the fundamentals of artificial intelligence, machine learning, and generative models. The learning structure helped me understand how AI systems generate content, process data, and assist in decision-making across different domains.</p>
+        </div>
+        <div class="intern-pane" id="i2-exp">
+          <p>During the internship, I worked through structured learning modules that covered Google Cloud fundamentals, Generative AI concepts, and real-world use cases. The program emphasised both theoretical understanding and practical learning, which helped me connect concepts with real applications.</p>
+          <p style="margin-top:0.6rem">I gained hands-on experience by applying the learned concepts through guided exercises and practical tasks. This improved my ability to understand AI workflows, data handling, and model interaction within a cloud environment. First time I was introduced to Google Notebook, database tools, and Generative AI.</p>
+        </div>
+        <div class="intern-pane" id="i2-certs">
+          <div class="cert-gallery">
+            <div class="cert-thumb" onclick="openImgModal('assets/smartbridge.png')">
+              <img src="assets/smartbridge.png" alt="SmartBridge Certificate" loading="lazy">
+              <p>Internship Certificate</p>
+            </div>
+            <div class="cert-thumb" onclick="openImgModal('assets/daf.png')">
+              <img src="assets/daf.png" alt="Certificate" loading="lazy">
+              <p>Completion Badge</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── INTERNSHIP 3: Eduskills ── -->
+    <div class="intern-item reveal" id="intern-i3">
+      <button class="intern-trigger" onclick="toggleIntern('i3')" aria-expanded="false" aria-controls="body-i3">
+        <div class="intern-trigger-text">
+          <strong>Eduskills</strong>
+          <span>Android (Google) · RPA (UiPath) · AWS Cloud · Virtual Internships</span>
+        </div>
+        <span class="intern-chevron" aria-hidden="true">▾</span>
+      </button>
+      <div class="intern-body" id="body-i3" role="region">
+        <div class="intern-tabs" role="tablist">
+          <button class="intern-tab active" role="tab" onclick="switchInternTab(this,'i3','about')">About</button>
+          <button class="intern-tab"        role="tab" onclick="switchInternTab(this,'i3','exp')">Experience</button>
+          <button class="intern-tab"        role="tab" onclick="switchInternTab(this,'i3','certs')">Certificates</button>
+        </div>
+        <div class="intern-pane active" id="i3-about">
+          <p>I completed three 10-week virtual internships under the National Internship Portal with support from AICTE, EduSkills, and industry partners like Google for Developers, UiPath Academic Alliance, and AWS Academy. These programs helped me build a strong foundation in Android development, business process automation, and cloud computing.</p>
+        </div>
+        <div class="intern-pane" id="i3-exp">
+          <p>During these internships, I learned Android app development concepts such as architecture, UI design, and application flow using Android Studio. I explored Robotic Process Automation (RPA), including process analysis, workflow mapping, and automation using UiPath tools.</p>
+          <p style="margin-top:0.6rem">I also studied cloud computing fundamentals like service models, virtualisation, storage, networking, and AWS basics. These experiences improved my problem-solving skills, analytical thinking, and practical understanding of modern technologies.</p>
+        </div>
+        <div class="intern-pane" id="i3-certs">
+          <div class="cert-gallery">
+            <div class="cert-thumb" onclick="openImgModal('assets/google.png')">
+              <img src="assets/google.png" alt="Google Android Certificate" loading="lazy">
+              <p>Android Developer — Google</p>
+            </div>
+            <div class="cert-thumb" onclick="openImgModal('assets/uipath.png')">
+              <img src="assets/uipath.png" alt="UiPath Certificate" loading="lazy">
+              <p>RPA Analyst — UiPath</p>
+            </div>
+            <div class="cert-thumb" onclick="openImgModal('assets/aws.png')">
+              <img src="assets/aws.png" alt="AWS Certificate" loading="lazy">
+              <p>Cloud — AWS Academy</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── INTERNSHIP 4: Prompt Engineering ── -->
+    <div class="intern-item reveal" id="intern-i4">
+      <button class="intern-trigger" onclick="toggleIntern('i4')" aria-expanded="false" aria-controls="body-i4">
+        <div class="intern-trigger-text">
+          <strong>Prompt Engineering for AI</strong>
+          <span>Eduskills · Virtual Internship</span>
+        </div>
+        <span class="intern-chevron" aria-hidden="true">▾</span>
+      </button>
+      <div class="intern-body" id="body-i4" role="region">
+        <div class="intern-tabs" role="tablist">
+          <button class="intern-tab active" role="tab" onclick="switchInternTab(this,'i4','about')">About</button>
+          <button class="intern-tab"        role="tab" onclick="switchInternTab(this,'i4','exp')">Experience</button>
+          <button class="intern-tab"        role="tab" onclick="switchInternTab(this,'i4','certs')">Certificates</button>
+        </div>
+        <div class="intern-pane active" id="i4-about">
+          <p>I successfully completed a comprehensive training program in Prompt Engineering for Artificial Intelligence, where I learned how to design, structure, and optimise prompts to effectively interact with AI systems. This program introduced me to the core principles behind large language models and how prompt design directly impacts AI-generated outputs.</p>
+        </div>
+        <div class="intern-pane" id="i4-exp">
+          <p>During the program, I learned key prompt engineering concepts such as zero-shot and few-shot prompting, role-based prompting, context structuring, output formatting control, instruction clarity, and iterative refinement. I understood how token usage, temperature settings, and model behaviour influence AI responses.</p>
+          <p style="margin-top:0.6rem">The training also helped me explore practical applications such as content generation, code assistance, data analysis support, and automation through AI tools. Through experimentation and continuous refinement, I improved my ability to generate precise, consistent, and high-quality AI outputs.</p>
+        </div>
+        <div class="intern-pane" id="i4-certs">
+          <div class="cert-gallery">
+            <div class="cert-thumb" onclick="openImgModal('assets/prompt2.png')">
+              <img src="assets/prompt2.png" alt="Prompt Engineering Certificate" loading="lazy">
+              <p>Prompt Engineering Certificate</p>
+            </div>
+            <div class="cert-thumb" onclick="openImgModal('assets/prompt.png')">
+              <img src="assets/prompt.png" alt="Prompt Engineering Badge" loading="lazy">
+              <p>Completion Badge</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /intern-list -->
+
+</main>
+
+<!-- IMAGE MODAL -->
+<div class="img-modal" id="imgModal" role="dialog" aria-label="Certificate viewer" aria-modal="true">
+  <div class="img-modal-inner">
+    <button class="img-modal-close" id="imgModalClose" aria-label="Close image">✕</button>
+    <img id="imgModalImg" src="" alt="Certificate full view">
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p>© <strong><a href="index.html">Abhi The Great</a></strong></p>
+</footer>
+
+<script src="script.js"></script>
+<script>
+/* ── INTERNSHIP ACCORDION ── */
+function toggleIntern(id) {
+  var item    = document.getElementById('intern-' + id);
+  var body    = document.getElementById('body-' + id);
+  var trigger = item.querySelector('.intern-trigger');
+  var isOpen  = item.classList.contains('open');
+
+  if (isOpen) {
+    item.classList.remove('open');
+    body.style.display = 'none';
+    trigger.setAttribute('aria-expanded', 'false');
+  } else {
+    item.classList.add('open');
+    body.style.display = 'block';
+    trigger.setAttribute('aria-expanded', 'true');
+    setTimeout(function () {
+      item.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }, 100);
+  }
+}
+
+function switchInternTab(btn, internId, tab) {
+  var body = document.getElementById('body-' + internId);
+  body.querySelectorAll('.intern-tab').forEach(function(t) { t.classList.remove('active'); });
+  body.querySelectorAll('.intern-pane').forEach(function(p) { p.classList.remove('active'); });
+  btn.classList.add('active');
+  document.getElementById(internId + '-' + tab).classList.add('active');
+}
+</script>
+</body>
+</html>

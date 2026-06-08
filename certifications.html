@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abhishek Ugare | Certifications</title>
+  <link rel="icon" type="image/png" href="assets/letter-a.png">
+  <link rel="stylesheet" href="styles.css">
+  <script>if(localStorage.getItem('theme')==='dark')document.documentElement.setAttribute('data-theme','dark');</script>
+</head>
+<body>
+
+<!-- ── TOP NAV ── -->
+<header class="top-nav" role="banner">
+  <div class="site-title"><a href="index.html">Abhishek Ugare</a></div>
+  <nav class="nav-links" aria-label="Main navigation">
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="internships.html">Internships</a>
+    <a href="certifications.html" class="active">Certifications</a>
+  </nav>
+  <button class="hamburger" id="hamburgerBtn" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode" title="Toggle light/dark mode">
+    <span class="icon-moon" aria-hidden="true">🌙</span>
+    <span class="icon-sun"  aria-hidden="true">☀️</span>
+  </button>
+</header>
+
+<!-- Mobile menu -->
+<nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
+  <a href="index.html">Home</a>
+  <a href="projects.html">Projects</a>
+  <a href="internships.html">Internships</a>
+  <a href="certifications.html">Certifications</a>
+</nav>
+
+<!-- ── PAGE CONTENT ── -->
+<main class="page-wrapper">
+
+  <nav class="back-nav" aria-label="Breadcrumb">
+    <a href="index.html">← Home</a>
+    <span style="color:var(--border);user-select:none">/</span>
+    <a href="certifications.html" class="current" aria-current="page">Certifications</a>
+  </nav>
+
+  <h1 class="page-title">Certifications</h1>
+  <p class="page-subtitle">54 certificates across 6 categories. Tap any card to view.</p>
+
+  <!-- CATEGORY NAV — horizontal scroll on mobile -->
+  <div class="cat-nav-wrap" role="navigation" aria-label="Certificate categories">
+    <div class="cat-nav">
+      <button class="cat-nav-btn active" onclick="scrollToCat('lic1', this)">Extra Curriculum (15)</button>
+      <button class="cat-nav-btn" onclick="scrollToCat('lic2', this)">IBM SkillsBuild (3)</button>
+      <button class="cat-nav-btn" onclick="scrollToCat('lic3', this)">Scaler Topics (3)</button>
+      <button class="cat-nav-btn" onclick="scrollToCat('lic4', this)">Infosys Springboard (25)</button>
+      <button class="cat-nav-btn" onclick="scrollToCat('lic5', this)">Mindluster (7)</button>
+      <button class="cat-nav-btn" onclick="scrollToCat('lic6', this)">GFG (1)</button>
+    </div>
+  </div>
+
+  <!-- ═══ CATEGORY 1 — Extra Curriculum ═══ -->
+  <section class="cat-section reveal" id="lic1">
+    <h2 class="cat-section-title">Extra Curriculum</h2>
+    <div class="card-grid">
+
+      <div class="cert-card" onclick="openImgModal('assets/nxtwave2.png')">
+        <div class="cert-card-img"><img src="assets/nxtwave2.png" alt="NXT Wave Gen AI Project" loading="lazy"></div>
+        <p class="cert-card-label">NXT Wave Gen AI Project Completion — 21st Dec 2025</p>
+      </div>
+
+      <div class="cert-card" onclick="openImgModal('assets/nxtwave1.png')">
+        <div class="cert-card-img"><img src="assets/nxtwave1.png" alt="NXT Wave Gen AI Webinar" loading="lazy"></div>
+        <p class="cert-card-label">NXT Wave Gen AI Webinar Completion — 20th Dec 2025</p>
+      </div>
+
+      <div class="cert-card" onclick="openImgModal('assets/mckinsey.png')">
+        <div class="cert-card-img"><img src="assets/mckinsey.png" alt="McKinsey Forward" loading="lazy"></div>
+        <p class="cert-card-label">McKinsey Forward Program Completion — 10th Dec 2025</p>
+      </div>
+
+      <div class="cert-card" onclick="openImgModal('assets/hackathon.png')">
+        <div class="cert-card-img"><img src="assets/hackathon.png" alt="Smart India Hackathon" loading="lazy"></div>
+        <p class="cert-card-label">Smart India Internal Hackathon — 2nd Prize — 20th Sept 2025</p>
+      </div>
+
+      <div class="cert-card" onclick="openImgModal('assets/oci.png')">
+        <div class="cert-card-img"><img src="assets/oci.png" alt="Oracle AI Foundation" loading="lazy"></div>
+        <p class="cert-card-label">Oracle AI Foundation — 05th Sept 2025</p>
+      </div>
+
+      <div class="cert-card" onclick="openImgModal('assets/deloitte1.png')">
+        <div class="cert-card-img"><img src="assets/deloitte1.png" alt="Deloitte Cyber" loading="lazy"></div>
+        <p class="cert-card-label">Cyber Job Simulation — 20th July 2025</p>
+      </div>
+
+      <div class="cert-card" onclick="openImgModal('assets/deloitte2.png')">
+        <div class="cert-card-img"><img src="assets/deloitte2.png" alt="Deloitte Technology" loading="lazy"></div>
+        <p class="cert-card-label">Technology Job Simulation — 02nd July 2025</p>
+      </div>
+
+      <div class="cert-card" onclick="openImgModal('assets/training.png')">
+        <div class="cert-card-img"><img src="assets/training.png" alt="IIT Bombay PHP MySQL" loading="lazy"></div>
+        <p class="cert-card-label">Spoken Tutorial IIT Bombay PHP &amp; MySQL Training — 21st June 2025</p>
+      </div>
+
+      <div class="cert-card" onclick="openImgModal('assets/codehunt.png')">
+        <div class="cert-card-img"><img src="assets/codehunt.png" alt="CodeHunt 2k25" loading="lazy"></div>
+        <p class="cert-card-label">CodeHunt 2k25 — Programming Club — 06th June 2025</p>
+      </div>
+
+      <div class="cert-card" onclick="openImgModal('assets/yoga.png')">
+        <div class="cert-card-img"><img src="assets/yoga.png" alt="World Meditation Day" loading="lazy"></div>
+        <p class="cert-card-label">First World Meditation Day — 21st Dec 2024</p>
+      </div>
+
+      <div class="cert-card" onclick="openImgModal('assets/aarambha.png')">
+        <div class="cert-card-img"><img src="assets/aarambha.png" alt="Aarambha Code Quest" loading="lazy"></div>
+        <p class="cert-card-label">Aarambha 2024 — Code Quest Carnival — 22nd Mar 2024</p>
+      </div>
+
+      <div class="cert-card" onclick="openImgModal('assets/cognizance.png')">
+        <div class="cert-card-img"><img src="assets/cognizance.png" alt="Techzest Cognizance" loading="lazy"></div>
+        <p class="cert-card-label">Techzest Cognizance — 03rd Dec 2023</p>
+      </div>
+
+      <div class="cert-card" onclick="openImgModal('assets/wartech.png')">
+        <div class="cert-card-img"><img src="assets/wartech.png" alt="Techzest Wartech" loading="lazy"></div>
+        <p class="cert-card-label">Techzest Wartech — 03rd Dec 2023</p>
+      </div>
+
+      <div class="cert-card" onclick="openImgModal('assets/algo-expert.png')">
+        <div class="cert-card-img"><img src="assets/algo-expert.png" alt="Algo Expert Reflex 2023" loading="lazy"></div>
+        <p class="cert-card-label">Algo Expert — Reflex 2023 — 24th Nov 2023</p>
+      </div>
+
+      <div class="cert-card" onclick="openImgModal('assets/robo-race.png')">
+        <div class="cert-card-img"><img src="assets/robo-race.png" alt="Robo Race Reflex 2023" loading="lazy"></div>
+        <p class="cert-card-label">Robo Race — Reflex 2023 — 24th Nov 2023</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══ CATEGORY 2 — IBM SkillsBuild ═══ -->
+  <section class="cat-section reveal" id="lic2">
+    <h2 class="cat-section-title">IBM SkillsBuild</h2>
+    <div class="card-grid">
+
+      <div class="cert-card" onclick="openImgModal('assets/ibm1.png')">
+        <div class="cert-card-img"><img src="assets/ibm1.png" alt="IBM AI" loading="lazy"></div>
+        <p class="cert-card-label">Introduction to Artificial Intelligence — 04th Oct 2024</p>
+      </div>
+
+      <div class="cert-card" onclick="openImgModal('assets/ibm2.png')">
+        <div class="cert-card-img"><img src="assets/ibm2.png" alt="IBM LLM" loading="lazy"></div>
+        <p class="cert-card-label">Introduction to LLM — 04th Oct 2024</p>
+      </div>
+
+      <div class="cert-card" onclick="openImgModal('assets/ibm3.png')">
+        <div class="cert-card-img"><img src="assets/ibm3.png" alt="IBM Prompting" loading="lazy"></div>
+        <p class="cert-card-label">Master the Art of Prompting — 04th Oct 2024</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══ CATEGORY 3 — Scaler Topics ═══ -->
+  <section class="cat-section reveal" id="lic3">
+    <h2 class="cat-section-title">Scaler Topics</h2>
+    <div class="card-grid">
+
+      <div class="cert-card" onclick="openImgModal('assets/scaler3.png')">
+        <div class="cert-card-img"><img src="assets/scaler3.png" alt="Scaler Node JS" loading="lazy"></div>
+        <p class="cert-card-label">Node JS — 18th Dec 2025</p>
+      </div>
+
+      <div class="cert-card" onclick="openImgModal('assets/scaler2.png')">
+        <div class="cert-card-img"><img src="assets/scaler2.png" alt="Scaler React JS" loading="lazy"></div>
+        <p class="cert-card-label">React JS — 30th Nov 2025</p>
+      </div>
+
+      <div class="cert-card" onclick="openImgModal('assets/scaler1.png')">
+        <div class="cert-card-img"><img src="assets/scaler1.png" alt="Scaler Python SQL" loading="lazy"></div>
+        <p class="cert-card-label">Python and SQL for Data Science — 30th Sept 2025</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══ CATEGORY 4 — Infosys Springboard ═══ -->
+  <section class="cat-section reveal" id="lic4">
+    <h2 class="cat-section-title">Infosys Springboard</h2>
+    <div class="card-grid">
+
+      <div class="cert-card" onclick="openImgModal('assets/python2.png')">
+        <div class="cert-card-img"><img src="assets/python2.png" alt="Python Part 2" loading="lazy"></div>
+        <p class="cert-card-label">Programming Fundamentals using Python Part 2 — 24th Nov 2025</p>
+      </div>
+
+      <div class="cert-card" onclick="openImgModal('assets/python1.png')">
+        <div class="cert-card-img"><img src="assets/python1.png" alt="Python Part 1" loading="lazy"></div>
+        <p class="cert-card-label">Programming Fundamentals using Python Part 1 — 22nd Nov 2025</p>
+      </div>
+
+      <div class="cert-card" onclick="openImgModal('assets/pbit.png')">
+        <div class="cert-card-img"><img src="assets/pbit.png" alt="Power BI Training" loading="lazy"></div>
+        <p class="cert-card-label">Power BI Training — 10th Nov 2025</p>
+      </div>
+
+      <div class="cert-card" onclick="openImgModal('assets/ado.png')">
+        <div class="cert-card-img"><img src="assets/ado.png" alt="Agile DevOps" loading="lazy"></div>
+        <p class="cert-card-label">Overview on Agile and DevOps — 09th Nov 2025</p>
+      </div>
+
+      <div class="cert-card" onclick="openImgModal('assets/js.png')">
+        <div class="cert-card-img"><img src="assets/js.png" alt="JavaScript" loading="lazy"></div>
+        <p class="cert-card-label">JavaScript — 30th May 2025</p>
+      </div>
+
+      <div class="cert-card" onclick="openImgModal('assets/css.png')">
+        <div class="cert-card-img"><img src="assets/css.png" alt="CSS" loading="lazy"></div>
+        <p class="cert-card-label">CSS — 30th April 2025</p>
+      </div>
+
+      <div class="cert-card" onclick="openImgModal('assets/html.png')">
+        <div class="cert-card-img"><img src="assets/html.png" alt="HTML" loading="lazy"></div>
+        <p class="cert-card-label">HTML — 30th Mar 2025</p>
+      </div>
+
+      <div class="cert-card" onclick="openImgModal('assets/dbms.png')">
+        <div class="cert-card-img"><img src="assets/dbms.png" alt="DBMS" loading="lazy"></div>
+        <p class="cert-card-label">Database Management System — 25th June 2025</p>
+      </div>
+
+      <div class="cert-card" onclick="openImgModal('assets/as.png')">
+        <div class="cert-card-img"><img src="assets/as.png" alt="Agile Scrum" loading="lazy"></div>
+        <p class="cert-card-label">Agile Scrum in Practice — 22nd June 2025</p>
+      </div>
+
+      <div class="cert-card" onclick="openImgModal('assets/er.png')">
+        <div class="cert-card-img"><img src="assets/er.png" alt="ER Modeling" loading="lazy"></div>
+        <p class="cert-card-label">ER Modeling — 21st June 2025</p>
+      </div>
+
+      <div class="cert-card" onclick="openImgModal('assets/pbibp.png')">
+        <div class="cert-card-img"><img src="assets/pbibp.png" alt="Power BI Business" loading="lazy"></div>
+        <p class="cert-card-label">Power BI for Business Professionals — 20th June 2025</p>
+      </div>
+
+      <div class="cert-card" onclick="openImgModal('assets/lpbi.png')">
+        <div class="cert-card-img"><img src="assets/lpbi.png" alt="Learning Power BI" loading="lazy"></div>
+        <p class="cert-card-label">Learning Microsoft Power BI — 19th June 2025</p>
+      </div>
+
+      <div class="cert-card" onclick="openImgModal('assets/pbi.png')">
+        <div class="cert-card-img"><img src="assets/pbi.png" alt="Data Viz Power BI" loading="lazy"></div>
+        <p class="cert-card-label">Hands-on Data Visualization with Microsoft Power BI — 15th June 2025</p>
+      </div>
+
+      <div class="cert-card" onclick="openImgModal('assets/ds.png')">
+        <div class="cert-card-img"><img src="assets/ds.png" alt="Data Science" loading="lazy"></div>
+        <p class="cert-card-label">Data Science — 15th June 2025</p>
+      </div>
+
+      <div class="cert-card" onclick="openImgModal('assets/agile.png')">
+        <div class="cert-card-img"><img src="assets/agile.png" alt="Agile Software Dev" loading="lazy"></div>
+        <p class="cert-card-label">Software Engineering and Agile Software Development — 14th June 2025</p>
+      </div>
+
+      <div class="cert-card" onclick="openImgModal('assets/ct.png')">
+        <div class="cert-card-img"><img src="assets/ct.png" alt="Cloud Technologies" loading="lazy"></div>
+        <p class="cert-card-label">Cloud Technologies — 14th June 2025</p>
+      </div>
+
+      <div class="cert-card" onclick="openImgModal('assets/bd.png')">
+        <div class="cert-card-img"><img src="assets/bd.png" alt="Big Data" loading="lazy"></div>
+        <p class="cert-card-label">Big Data — 09th June 2025</p>
+      </div>
+
+      <div class="cert-card" onclick="openImgModal('assets/excel.png')">
+        <div class="cert-card-img"><img src="assets/excel.png" alt="Excel" loading="lazy"></div>
+        <p class="cert-card-label">Excel — 07th June 2025</p>
+      </div>
+
+      <div class="cert-card" onclick="openImgModal('assets/hip.png')">
+        <div class="cert-card-img"><img src="assets/hip.png" alt="High Impact Presentation" loading="lazy"></div>
+        <p class="cert-card-label">High Impact Presentation — 06th June 2025</p>
+      </div>
+
+      <div class="cert-card" onclick="openImgModal('assets/tm.png')">
+        <div class="cert-card-img"><img src="assets/tm.png" alt="Time Management" loading="lazy"></div>
+        <p class="cert-card-label">Time Management — 04th June 2025</p>
+      </div>
+
+      <div class="cert-card" onclick="openImgModal('assets/bi.png')">
+        <div class="cert-card-img"><img src="assets/bi.png" alt="Business Intelligence" loading="lazy"></div>
+        <p class="cert-card-label">Introduction to Business Intelligence — 03rd June 2025</p>
+      </div>
+
+      <div class="cert-card" onclick="openImgModal('assets/email.png')">
+        <div class="cert-card-img"><img src="assets/email.png" alt="Email Writing" loading="lazy"></div>
+        <p class="cert-card-label">Email Writing Skills — 03rd June 2025</p>
+      </div>
+
+      <div class="cert-card" onclick="openImgModal('assets/mdm.png')">
+        <div class="cert-card-img"><img src="assets/mdm.png" alt="MDM" loading="lazy"></div>
+        <p class="cert-card-label">Multidimensional Data Modeling — 03rd June 2025</p>
+      </div>
+
+      <div class="cert-card" onclick="openImgModal('assets/cc.png')">
+        <div class="cert-card-img"><img src="assets/cc.png" alt="Cloud Computing" loading="lazy"></div>
+        <p class="cert-card-label">Cloud Computing for Basic Knowledge — 08th Jan 2025</p>
+      </div>
+
+      <div class="cert-card" onclick="openImgModal('assets/aiml.png')">
+        <div class="cert-card-img"><img src="assets/aiml.png" alt="AI ML Basics" loading="lazy"></div>
+        <p class="cert-card-label">Artificial Intelligence and Machine Learning for Basics — 08th Jan 2025</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══ CATEGORY 5 — Mindluster ═══ -->
+  <section class="cat-section reveal" id="lic5">
+    <h2 class="cat-section-title">Mindluster</h2>
+    <div class="card-grid">
+
+      <div class="cert-card" onclick="openImgModal('assets/mlmd.png')">
+        <div class="cert-card-img"><img src="assets/mlmd.png" alt="ML Model Deployment" loading="lazy"></div>
+        <p class="cert-card-label">Machine Learning Model Deployment — 03rd Sept 2024</p>
+      </div>
+
+      <div class="cert-card" onclick="openImgModal('assets/python.png')">
+        <div class="cert-card-img"><img src="assets/python.png" alt="Python" loading="lazy"></div>
+        <p class="cert-card-label">Python Programming Language — 24th Aug 2024</p>
+      </div>
+
+      <div class="cert-card" onclick="openImgModal('assets/sfm.png')">
+        <div class="cert-card-img"><img src="assets/sfm.png" alt="Structured Finance" loading="lazy"></div>
+        <p class="cert-card-label">Structured Finance Management — 31st July 2024</p>
+      </div>
+
+      <div class="cert-card" onclick="openImgModal('assets/scd.png')">
+        <div class="cert-card-img"><img src="assets/scd.png" alt="Cybersecurity Defence" loading="lazy"></div>
+        <p class="cert-card-label">Strengthening Cybersecurity Defence — 25th July 2024</p>
+      </div>
+
+      <div class="cert-card" onclick="openImgModal('assets/dsa.png')">
+        <div class="cert-card-img"><img src="assets/dsa.png" alt="DSA" loading="lazy"></div>
+        <p class="cert-card-label">Data Structures and Algorithms — 20th July 2024</p>
+      </div>
+
+      <div class="cert-card" onclick="openImgModal('assets/wd.png')">
+        <div class="cert-card-img"><img src="assets/wd.png" alt="Web Dev Flask" loading="lazy"></div>
+        <p class="cert-card-label">Web Development using Python and Flask — 13th July 2024</p>
+      </div>
+
+      <div class="cert-card" onclick="openImgModal('assets/seo.png')">
+        <div class="cert-card-img"><img src="assets/seo.png" alt="SEO Content Writing" loading="lazy"></div>
+        <p class="cert-card-label">SEO Content Writing — 06th July 2024</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══ CATEGORY 6 — GFG ═══ -->
+  <section class="cat-section reveal" id="lic6">
+    <h2 class="cat-section-title">GFG</h2>
+    <div class="card-grid">
+
+      <div class="cert-card" onclick="openImgModal('assets/gfgworkshop.png')">
+        <div class="cert-card-img"><img src="assets/gfgworkshop.png" alt="GFG AI Agent UiPath" loading="lazy"></div>
+        <p class="cert-card-label">GeeksforGeeks AI Agent with UiPath Workshop — 18th Dec 2025</p>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- IMAGE MODAL -->
+<div class="img-modal" id="imgModal" role="dialog" aria-label="Certificate viewer" aria-modal="true">
+  <div class="img-modal-inner">
+    <button class="img-modal-close" id="imgModalClose" aria-label="Close image">✕</button>
+    <img id="imgModalImg" src="" alt="Certificate full view">
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p>© <strong><a href="index.html">Abhi The Great</a></strong></p>
+</footer>
+
+<script src="script.js"></script>
+<script>
+/* Smooth scroll to category + update active nav btn */
+function scrollToCat(id, btn) {
+  document.querySelectorAll('.cat-nav-btn').forEach(function(b) {
+    b.classList.remove('active');
+  });
+  btn.classList.add('active');
+  var target = document.getElementById(id);
+  if (target) {
+    var offset = 70; /* account for sticky nav height */
+    var top = target.getBoundingClientRect().top + window.scrollY - offset;
+    window.scrollTo({ top: top, behavior: 'smooth' });
+  }
+}
+
+/* Highlight category nav on scroll */
+(function () {
+  var cats = ['lic1','lic2','lic3','lic4','lic5','lic6'];
+  var btns = document.querySelectorAll('.cat-nav-btn');
+
+  window.addEventListener('scroll', function () {
+    var scrollY = window.scrollY + 90;
+    var active = 0;
+    cats.forEach(function (id, i) {
+      var el = document.getElementById(id);
+      if (el && el.offsetTop <= scrollY) active = i;
+    });
+    btns.forEach(function (b) { b.classList.remove('active'); });
+    if (btns[active]) btns[active].classList.add('active');
+  }, { passive: true });
+}());
+</script>
+</body>
+</html>
