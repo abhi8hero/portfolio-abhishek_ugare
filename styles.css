@@ -694,6 +694,44 @@ li { margin-bottom: 0.35rem; }
   flex: 1;
 }
 
+/* ── CERT SHOW MORE ─────────────────────────────────────── */
+.show-more-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+  background: var(--bg-alt);
+  border: 1px dashed var(--accent);
+  cursor: pointer;
+  transition: all var(--transition);
+}
+
+.show-more-card:hover {
+  background: var(--bg-hover);
+  border-color: var(--navy);
+  transform: translateY(-3px);
+}
+
+.show-more-content {
+  text-align: center;
+  padding: 1rem;
+}
+
+.show-more-content span {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--navy);
+  line-height: 1;
+}
+
+.show-more-content p {
+  margin-top: 0.35rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--navy);
+}
+
 /* ── CERTIFICATE / IMAGE MODAL ────────────────────────────── */
 .img-modal {
   display: none;

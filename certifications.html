@@ -426,6 +426,80 @@ function scrollToCat(id, btn) {
     if (btns[active]) btns[active].classList.add('active');
   }, { passive: true });
 }());
+
+/* =========================================================
+   CERTIFICATE LIMIT + SHOW MORE
+   Desktop: 7 cards + show more on 8th
+   Mobile: 5 cards + show more on 6th
+========================================================= */
+
+(function () {
+
+  function applyCertificateLimit() {
+
+    document.querySelectorAll('.card-grid').forEach(function(grid) {
+
+      /* remove old show more if exists */
+      const oldBtn = grid.querySelector('.show-more-card');
+      if (oldBtn) oldBtn.remove();
+
+      const cards = Array.from(grid.querySelectorAll('.cert-card:not(.show-more-card)'));
+
+      /* reset all cards */
+      cards.forEach(card => {
+        card.style.display = '';
+      });
+
+      const limit = window.innerWidth < 768 ? 5 : 7;
+
+      /* do nothing if certificates are already within limit */
+      if (cards.length <= limit) return;
+
+      /* hide extra cards */
+      cards.forEach((card, index) => {
+        if (index >= limit) {
+          card.style.display = 'none';
+        }
+      });
+
+      /* create show more card */
+      const showMore = document.createElement('div');
+      showMore.className = 'cert-card show-more-card';
+
+      showMore.innerHTML = `
+        <div class="show-more-content">
+          <span>→</span>
+          <p>Show More</p>
+        </div>
+      `;
+
+      showMore.addEventListener('click', function() {
+
+        cards.forEach(card => {
+          card.style.display = '';
+        });
+
+        showMore.remove();
+      });
+
+      grid.appendChild(showMore);
+
+    });
+
+  }
+
+  applyCertificateLimit();
+
+  window.addEventListener('resize', function () {
+    clearTimeout(window.certResizeTimer);
+
+    window.certResizeTimer = setTimeout(function () {
+      applyCertificateLimit();
+    }, 200);
+  });
+
+})();
 </script>
+
 </body>
 </html>
