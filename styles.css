@@ -490,7 +490,7 @@ li { margin-bottom: 0.35rem; }
 }
 .detail-report-link:hover { text-decoration: underline; }
 
-/* ── INTERNSHIP ACCORDION ─────────────────────────────────── */
+/* ── ACHIEVEMENT ACCORDION ─────────────────────────────────── */
 .intern-list { margin-top: 1.25rem; display: flex; flex-direction: column; gap: 0.75rem; }
 
 .intern-item {
@@ -584,7 +584,7 @@ li { margin-bottom: 0.35rem; }
   line-height: 1.7;
 }
 
-/* Certificate gallery inside internship */
+/* Certificate gallery inside achievement */
 .cert-gallery {
   display: grid;
   grid-template-columns: 1fr 1fr;
