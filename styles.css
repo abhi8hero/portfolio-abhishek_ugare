@@ -240,6 +240,26 @@ li { margin-bottom: 0.35rem; }
   background: var(--border);
   margin: 0.25rem 0;
 }
+/* Mobile-only section */
+.mobile-only-links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+.mobile-only-links .resume-link {
+  width: 100%;
+  justify-content: center;
+  margin-top: 0; 
+}
+
+/* Hide on tablet/desktop */
+@media (min-width: 768px) {
+  .mobile-only-links {
+    display: none;
+  }
+}
+
 
 /* ── PAGE WRAPPER ─────────────────────────────────────────── */
 .page-wrapper {
