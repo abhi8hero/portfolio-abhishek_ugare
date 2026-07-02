@@ -65,6 +65,7 @@ function toggleTheme() {
   });
 }());
 
+/* ── HAMBURGER MENU ATTENTION ─────────────────────────────────────── */
 (function () {
   const btn = document.getElementById('hamburgerBtn');
 
