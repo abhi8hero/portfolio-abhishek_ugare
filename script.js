@@ -65,6 +65,36 @@ function toggleTheme() {
   });
 }());
 
+(function () {
+  const btn = document.getElementById('hamburgerBtn');
+
+  if (!btn || window.innerWidth >= 768) return;
+
+  // Create overlay
+  const overlay = document.createElement('div');
+  overlay.className = 'hint-overlay';
+  document.body.appendChild(overlay);
+
+  window.addEventListener('load', function () {
+    setTimeout(function () {
+
+      overlay.classList.add('show');
+
+      btn.classList.add('hint');
+      btn.classList.add('open');
+
+      setTimeout(function () {
+
+        btn.classList.remove('hint');
+        btn.classList.remove('open');
+        overlay.classList.remove('show');
+
+      }, 1000);
+
+    }, 1000);
+  });
+})();
+
 
 /* ── SCROLL REVEAL ──────────────────────────────────────── */
 (function () {
