@@ -71,10 +71,31 @@ function toggleTheme() {
 
   if (!btn || window.innerWidth >= 768) return;
 
+  const STORAGE_KEY = 'menuHintSeen';
+  const SEVEN_DAYS = 7 * 24 * 60 * 60 * 1000;
+
+  // Check if user has clicked within the last 7 days
+  const lastClicked = localStorage.getItem(STORAGE_KEY);
+
+  if (lastClicked) {
+    const elapsed = Date.now() - Number(lastClicked);
+
+    if (elapsed < SEVEN_DAYS) {
+      return; // Don't show hint
+    } else {
+      localStorage.removeItem(STORAGE_KEY); // Expired
+    }
+  }
+
   // Create overlay
   const overlay = document.createElement('div');
   overlay.className = 'hint-overlay';
   document.body.appendChild(overlay);
+
+  // Save timestamp when user clicks the menu
+  btn.addEventListener('click', function () {
+    localStorage.setItem(STORAGE_KEY, Date.now());
+  });
 
   window.addEventListener('load', function () {
     setTimeout(function () {
