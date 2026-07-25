@@ -59,11 +59,21 @@
       <div class="project-card-body">
         <h3>Automation For Data Cleaning Process</h3>
         <a class="card-link" href="" target="_blank" rel="noopener" onclick="event.stopPropagation()">Coming Soon ↗</a>
+      </div>
+    </div>
+
+    <div class="project-card reveal" onclick="loadProject('p2')" id="card-p2" aria-label="ADCP project">
+      <div class="project-card-img">
+        <img src="assets/kaayaa.png" alt="KAAYAA">
+      </div>
+      <div class="project-card-body">
+        <h3>Kaayaa</h3>
+        <a class="card-link" href="" target="_blank" rel="noopener" onclick="event.stopPropagation()">Coming on July 30 ↗</a>
         <span id="countdown"></span>
       </div>
     </div>
       <script>
-            const endTime = new Date("2026-08-30T12:00:00").getTime();
+            const endTime = new Date("2026-07-30T12:00:00").getTime();
 
             function updateCountdown() {
               const now = Date.now();
@@ -88,7 +98,7 @@
             const timer = setInterval(updateCountdown, 1000);
             </script>
 
-    <div class="project-card reveal" onclick="loadProject('p2')" id="card-p2" aria-label="yaatra project">
+    <div class="project-card reveal" onclick="loadProject('p3')" id="card-p3" aria-label="yaatra project">
       <div class="project-card-img">
         <img src="assets/yaatra.png" alt="dashboard">
       </div>
@@ -98,7 +108,7 @@
       </div>
     </div>
     
-    <div class="project-card reveal" onclick="loadProject('p3')" id="card-p3" aria-label="Analytics project">
+    <div class="project-card reveal" onclick="loadProject('p4')" id="card-p4" aria-label="Analytics project">
       <div class="project-card-img">
         <img src="assets/web.png" alt="dashboard">
       </div>
@@ -108,7 +118,7 @@
       </div>
     </div>
     
-    <div class="project-card reveal" onclick="loadProject('p4')" id="card-p4" aria-label="AVV Techsutra project">
+    <div class="project-card reveal" onclick="loadProject('p5')" id="card-p5" aria-label="AVV Techsutra project">
       <div class="project-card-img">
         <img src="assets/avv.png" alt="dashboard">
       </div>
@@ -118,7 +128,7 @@
       </div>
     </div>
     
-    <div class="project-card reveal" onclick="loadProject('p5')" id="card-p5" aria-label="HotelRevAI project">
+    <div class="project-card reveal" onclick="loadProject('p6')" id="card-p6" aria-label="HotelRevAI project">
       <div class="project-card-img">
         <img src="assets/hotel.png" alt="HotelRevAI">
       </div>
@@ -128,7 +138,7 @@
       </div>
     </div>
 
-    <div class="project-card reveal" onclick="loadProject('p6')" id="card-p6" aria-label="MongoDB NLI project">
+    <div class="project-card reveal" onclick="loadProject('p7')" id="card-p7" aria-label="MongoDB NLI project">
       <div class="project-card-img">
         <img src="assets/mongodb.png" alt="MongoDB NLI">
       </div>
@@ -138,7 +148,7 @@
       </div>
     </div>
 
-    <div class="project-card reveal" onclick="loadProject('p7')" id="card-p7" aria-label="Take Token project">
+    <div class="project-card reveal" onclick="loadProject('p8')" id="card-p8" aria-label="Take Token project">
       <div class="project-card-img">
         <img src="assets/take-token.png" alt="Take Token">
       </div>
@@ -148,7 +158,7 @@
       </div>
     </div>
 
-    <div class="project-card reveal" onclick="loadProject('p8')" id="card-p8" aria-label="Movie Finder Plus project">
+    <div class="project-card reveal" onclick="loadProject('p9')" id="card-p9" aria-label="Movie Finder Plus project">
       <div class="project-card-img">
         <img src="assets/movie-finder-plus.png" alt="Movie Finder Plus">
       </div>
@@ -158,7 +168,7 @@
       </div>
     </div>
 
-    <div class="project-card reveal" onclick="loadProject('p9')" id="card-p9" aria-label="Arya AI project">
+    <div class="project-card reveal" onclick="loadProject('p10')" id="card-p10" aria-label="Arya AI project">
       <div class="project-card-img">
         <img src="assets/arya-ai.png" alt="Arya AI">
       </div>
@@ -168,7 +178,7 @@
       </div>
     </div>
 
-    <div class="project-card reveal" onclick="loadProject('p10')" id="card-p10" aria-label="Career Advice project">
+    <div class="project-card reveal" onclick="loadProject('p11')" id="card-p11" aria-label="Career Advice project">
       <div class="project-card-img">
         <img src="assets/career-advice.png" alt="Career Advice">
       </div>
@@ -178,7 +188,7 @@
       </div>
     </div>
 
-    <div class="project-card reveal" onclick="loadProject('p11')" id="card-p11" aria-label="CV Maker project">
+    <div class="project-card reveal" onclick="loadProject('p12')" id="card-p12" aria-label="CV Maker project">
       <div class="project-card-img">
         <img src="assets/cv-maker.png" alt="CV Maker">
       </div>
@@ -188,7 +198,7 @@
       </div>
     </div>
 
-    <div class="project-card reveal" onclick="loadProject('p12')" id="card-p12" aria-label="BBDMA project">
+    <div class="project-card reveal" onclick="loadProject('p13')" id="card-p13" aria-label="BBDMA project">
       <div class="project-card-img">
         <img src="assets/BBDMA.png" alt="BBDMA">
       </div>
@@ -240,77 +250,84 @@ var projects = {
     output: 'Raw data into meaningful insights in one click.',
     report: ''
   },
-  p2: {
+   p2: {
+    title: 'Kaayaa',
+    desc: 'AI & Agent Obeservability. Trace, monitor, and debug AI-native systems. ',
+    tech: 'N8N, Signoz, Docker, OpenTelemetry',
+    output: 'AI agents with E2E observability on SigNoz, Self-hosted inference observability (vLLM), SRE Sidekick with SigNoz MCP,n8n workflows with E2E observability and Self-healing infra with SigNoz metrics.',
+    report: ''
+  },
+  p3: {
     title: 'Yaatra',
     desc: 'Yaatra is an AI-powered travel planning web application designed to simplify the entire trip planning process. It helps users create personalized travel itineraries based on their destination, budget, travel dates, and preferences. By combining modern web technologies with Agentic AI, Yaatra provides intelligent travel recommendations and organized trip management through a secure and user-friendly platform.',
-    tech: 'n8n ( Agentic AI ), Supabase ( Database & Authentication), Miaoda (Typescript & React UI Technologies )',
+    tech: 'N8N ( Agentic AI ), Supabase ( Database & Authentication), Miaoda (Typescript & React UI Technologies )',
     output: 'The Yaatra application successfully generates a personalized AI-based travel itinerary based on the users destination, budget, travel dates, and preferences. The generated travel plan is securely stored in the database and displayed on the users dashboard for easy access and management. visit github repo on https://github.com/abhi8hero/yaatra',
     report: 'reports/yaatra-report.pdf'
   },
-  p3: {
+  p4: {
     title: 'Web Traffic Analytics System',
     desc: 'The Web Analytics Dashboard is a real-time analytics and traffic monitoring system designed to track website visitors, sessions, user behavior, devices, browsers, traffic sources, and geographic locations. The project provides interactive visualizations and live analytics using a modern full-stack architecture. It helps website owners understand visitor activity, campaign performance, and overall website engagement through an intuitive dashboard interface.',
     tech: 'React.js, TypeScript, Node.js, Supabase and PostgreSQL Database',
     output: 'Successfully Tracks total visits, sessions, and unique visitors, Displays real-time active users and page activity, Shows visitor geographic locations and traffic sources, Analyzes browser, device, and operating system usage, Tracks marketing campaigns using UTM parameters, Provides interactive charts, graphs, and analytics reports, Stores and manages analytics data using Supabase cloud database.',
     report: 'reports/Project-report-Web-Traffic-Analytics-System.pdf'
   },
-  p4: {
+  p5: {
     title: 'AVV Techsutra Water Management System',
     desc: 'Water Management System is a smart automation-based mini project developed as part of our college curriculum under Team AVV Techsutra. The project focuses on efficient water distribution and monitoring using modern technologies such as ESP32, relay modules, automated valves, sensors, and a web-based dashboard. It is designed to reduce water wastage, enable real-time monitoring, and improve control over water flow through automation. The system integrates hardware and software components to provide features like valve control, live status monitoring, and data visualization, while also demonstrating concepts of IoT, embedded systems, and web development. This project helped strengthen our practical knowledge in teamwork, problem-solving, automation, and full-stack development.',
     tech: 'ESP32, Solenoid Valves, Relays, Water Reservoirs, Water Pumps, Water Sensors, Arduino IDE, React, TailwindCSS, TypeScript, Python',
     output: 'Successfully completed the Water Management System mini project under Team AVV Techsutra as a collaborative team effort, contributing to automation development, dashboard integration, hardware connectivity, and system monitoring while enhancing teamwork, communication, and problem-solving skills.',
     report: 'reports/water-management-system-report.pdf'
   },
-  p5: {
+  p6: {
     title: 'HotelRevAI',
     desc: 'HotelRevAI is a data-driven project developed as part of the Infosys Springboard Data Visualisation Internship 6.0. This project focuses on transforming raw hotel data into meaningful insights that help in improving revenue strategies, occupancy rates, and overall business performance. It is a team project, where collaboration, idea-sharing, and collective problem-solving played a key role in delivering impactful dashboards and analysis.',
     tech: 'Power BI',
     output: 'Successfully completed as a team effort — each member contributed to data cleaning, dashboard design, insight generation, and presentation. Collaboration and communication were key factors in achieving the final outcome.',
     report: 'reports/hotelrevai-report.pdf'
   },
-  p6: {
+  p7: {
     title: 'MongoDB NLI',
     desc: 'MongoDB NLI is a web-based application designed to allow users to interact with MongoDB databases using simple natural language commands. The project focuses on converting plain English inputs into MongoDB queries, performing CRUD operations, and displaying results in a user-friendly interface.',
     tech: 'React, MongoDB, Node.js',
     output: 'Users can type commands like "Add a new user in users collection" or "Show all orders from 2023". The system converts these commands into accurate MongoDB queries and displays results in a responsive table.',
     report: 'reports/mongodb-nli-report.pdf'
   },
-  p7: {
+  p8: {
     title: 'Take Token',
     desc: 'Take Token is a web-based application created to handle basic token generation and management workflows. The project focuses on authentication logic, token handling, and practical JavaScript implementation for real-world use cases.',
     tech: 'HTML, CSS, JavaScript, MongoDB, Node.js',
     output: 'A simple token management web application designed to generate, manage, and track tokens efficiently. Live at: https://take-tokon.onrender.com',
     report: 'reports/take-token-report.pdf'
   },
-  p8: {
+  p9: {
     title: 'Movie Finder Plus',
     desc: 'Movie Finder Plus is a frontend web application that helps users discover movies by searching their titles. It fetches real-time movie data from an external API and displays essential details such as ratings, release year, and plot summaries.',
     tech: 'HTML, CSS, JavaScript, OMDb API',
     output: 'A web application that allows users to search for movies and view detailed information using a public movie database API. Live at: https://abhi8hero.github.io/movie-finder-plus/',
     report: 'reports/movie-finder-plus-report.pdf'
   },
-  p9: {
+  p10: {
     title: 'Arya AI',
     desc: 'Arya AI is a web-based chatbot application that allows users to interact with an artificial intelligence system in real time. The project focuses on integrating an AI model into a frontend interface to deliver meaningful and responsive conversations.',
     tech: 'HTML, CSS, JavaScript, Google Gemini API',
     output: 'A smart AI-powered chatbot designed to answer user queries and provide interactive conversations through a clean web interface. Live at: https://abhi8hero.github.io/arya-ai/',
     report: 'reports/arya-ai-report.pdf'
   },
-  p10: {
+  p11: {
     title: 'Career Advice',
     desc: 'Career Guidance Assistant is a web-based application that provides career-related guidance based on user interests and goals. The project focuses on delivering structured career suggestions through a simple and interactive interface.',
     tech: 'HTML, CSS, JavaScript',
     output: 'An intelligent web application designed to help users explore career paths and make informed career decisions. Live at: https://abhi8hero.github.io/career-guidance-assistant/',
     report: 'reports/career-guidance-assistant-report.pdf'
   },
-  p11: {
+  p12: {
     title: 'CV Maker',
     desc: 'CV Maker is a frontend-based web application designed to simplify the process of building a professional curriculum vitae. Users can enter their personal and professional details and generate a clean, well-structured CV layout.',
     tech: 'HTML, CSS, JavaScript',
     output: 'A simple and efficient web application that helps users create professional CVs quickly and easily. Live at: https://abhi8hero.github.io/CV-Maker/',
     report: 'reports/cv-maker-report.pdf'
   },
-  p12: {
+  p13: {
     title: 'BBDMA',
     desc: 'Business Boost Agency is a frontend website project designed to represent a digital agency. The goal of this project is to practice real-world website structure, clean UI design, and responsive layouts using core web technologies.',
     tech: 'HTML, CSS, JavaScript',
