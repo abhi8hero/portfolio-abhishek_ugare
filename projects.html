@@ -52,7 +52,7 @@
   <!-- PROJECT GRID -->
   <div class="card-grid">
 
-    <div class="project-card reveal" onclick="loadProject('p1')" id="card-p1" aria-label="ADCP project">
+    <!-- <div class="project-card reveal" onclick="loadProject('p1')" id="card-p1" aria-label="ADCP project">
       <div class="project-card-img">
         <img src="assets/adcp.png" alt="ADCP">
       </div>
@@ -61,9 +61,20 @@
         <a class="card-link" href="" target="_blank" rel="noopener" onclick="event.stopPropagation()">Coming Soon ↗</a>
         <span id="countdown"></span>
       </div>
+    </div> -->
+
+    <div class="project-card reveal" onclick="loadProject('p1')" id="card-p1" aria-label="sccrappy project">
+      <div class="project-card-img">
+        <img src="assets/sccrappy.png" alt="sccrappy">
+      </div>
+      <div class="project-card-body">
+        <h3>Self-Healing Web Scraper</h3>
+        <a class="card-link" href="" target="_blank" rel="noopener" onclick="event.stopPropagation()">Comming Soon ↗</a>
+        <span id="countdown"></span>
+      </div>
     </div>
       <script>
-            const endTime = new Date("2026-08-25T12:00:00").getTime();
+            const endTime = new Date("2026-08-30T12:00:00").getTime();
 
             function updateCountdown() {
               const now = Date.now();
@@ -234,13 +245,13 @@
 var projects = {
   
   p1: {
-    title: 'Working Title : ADCP',
-    desc: 'Automation for Data Cleaning Process is an bakend focused agentic ai project. Specially desingnig for automating process of data cleaning in the data analysis. ',
+    title: 'Sccrappy',
+    desc: 'Let the work be known, but the doer remain unknown...',
     tech: 'Information Unavailable',
-    output: 'Raw data into meaningful insights in one click.',
+    output: 'Self-healing web scraper',
     report: ''
   },
-   p2: {
+  p2: {
     title: 'Kaayaa',
     desc: 'AI & Agent Obeservability. Trace, monitor, and debug AI-native systems. KAAYAA is an AI-powered observability platform developed to provide end-to-end monitoring and analysis of AI workflows. The project integrates OpenTelemetry for instrumentation, n8n for workflow automation, and SigNoz as the observability platform to capture and visualize telemetry data in real time. Every stage of an AI workflow from receiving a user request to generating the final response is instrumented using OpenTelemetry, producing distributed traces and performance metrics that are exported to SigNoz for storage, analysis, and visualization.',
     tech: 'N8N (Agentic AI), Signoz (Observability & Monitoring), Docker (Containerization), OpenTelemetry (Distributed Tracing), Miaoda (Typescript & React UI Technologies)',
