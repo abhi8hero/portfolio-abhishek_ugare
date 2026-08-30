@@ -61,19 +61,8 @@
         <a class="card-link" href="" target="_blank" rel="noopener" onclick="event.stopPropagation()">Coming Soon ↗</a>
         <span id="countdown"></span>
       </div>
-    </div> -->
-
-    <div class="project-card reveal" onclick="loadProject('p1')" id="card-p1" aria-label="sccrappy project">
-      <div class="project-card-img">
-        <img src="assets/sccrappy.png" alt="sccrappy">
-      </div>
-      <div class="project-card-body">
-        <h3>Self-Healing Web Scraper</h3>
-        <a class="card-link" href="" target="_blank" rel="noopener" onclick="event.stopPropagation()">Comming On ↗</a>
-        <span id="countdown"></span>
-      </div>
-    </div>
-      <script>
+    </div> 
+    <script>
             const endTime = new Date("2026-08-30T12:00:00").getTime();
 
             function updateCountdown() {
@@ -97,7 +86,17 @@
 
             updateCountdown();
             const timer = setInterval(updateCountdown, 1000);
-            </script> 
+            </script> -->
+
+    <div class="project-card reveal" onclick="loadProject('p1')" id="card-p1" aria-label="sccrappy project">
+      <div class="project-card-img">
+        <img src="assets/sccrappy.png" alt="sccrappy">
+      </div>
+      <div class="project-card-body">
+        <h3>Self-Healing Web Scraper</h3>
+        <a class="card-link" href="https://sccrappy.vercel.app/" target="_blank" rel="noopener" onclick="event.stopPropagation()">Live Demo ↗</a>
+      </div>
+    </div>
 
     <div class="project-card reveal" onclick="loadProject('p2')" id="card-p2" aria-label="ADCP project">
       <div class="project-card-img">
@@ -246,10 +245,10 @@ var projects = {
   
   p1: {
     title: 'Sccrappy',
-    desc: 'Let the work be known, but the doer remain unknown...',
-    tech: 'Information Unavailable',
+    desc: 'Let the work be known, but the doer remain unknown... SCCRAPPY is a Self-Healing Web Scraper developed to address this challenge by creating a more adaptive and automated scraping system.',
+    tech: 'N8N (Agentic AI) & Emergent (UI Tech)',
     output: 'Self-healing web scraper',
-    report: ''
+    report: 'reports/sccrappy-report.pdf'
   },
   p2: {
     title: 'Kaayaa',
