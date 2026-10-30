@@ -61,20 +61,11 @@
       <div class="project-card-body">
         <h3>Unknown</h3>
         <a class="card-link" href="" target="_blank" rel="noopener" onclick="event.stopPropagation()">Data Hidden ↗</a>
-      </div>
-    </div>-->
-
-    <div class="project-card reveal" onclick="loadProject('p2')" id="card-p2" aria-label="ADCP project">
-      <div class="project-card-img">
-        <img src="assets/adcp.png" alt="ADCP">
-      </div>
-      <div class="project-card-body">
-        <h3>Automation For Data Cleaning Process</h3>
-        <a class="card-link" href="https://ganga-cognitive-intelligence-v1.vercel.app/" target="_blank" rel="noopener" onclick="event.stopPropagation()">Final Version Coming soon <br> v0.2.8.1 Live Demo ↗</a>
-        <span id="countdown"></span>
-      </div>
-    </div> 
-    <script>
+      <span id="countdown"></span>
+    </div>
+    </div>
+    
+      <script>
             const endTime = new Date("2026-10-31T12:00:00").getTime();
 
             function updateCountdown() {
@@ -98,7 +89,17 @@
 
             updateCountdown();
             const timer = setInterval(updateCountdown, 1000);
-            </script>
+            </script>-->
+
+    <div class="project-card reveal" onclick="loadProject('p2')" id="card-p2" aria-label="ADCP project">
+      <div class="project-card-img">
+        <img src="assets/adcp.png" alt="ADCP">
+      </div>
+      <div class="project-card-body">
+        <h3>Automation For Data Cleaning Process</h3>
+        <a class="card-link" href="https://ganga-cognitive-intelligence-v1.vercel.app/" target="_blank" rel="noopener" onclick="event.stopPropagation()">Live Demo ↗</a>
+      </div>
+    </div> 
     
     <!--<div class="project-card reveal" onclick="loadProject('p3')" id="card-p3" aria-label="Data Visualisation project">
       <div class="project-card-img">
@@ -264,10 +265,10 @@ var projects = {
   },
    p2: {
     title: 'Ganga Cognitive Intelligence',
-    desc: 'Final version for the Ganga will be publish soon...',
-    tech: 'Information Unavailable',
-    output: 'Automation for Data Cleaning Process - coversion of raw data into valueable insights.',
-    report: ''
+    desc: 'An intelligent data preparation and quality management solution designed to streamline dataset preprocessing through automated cleaning, standardization, and data quality improvement. Users can prepare structured datasets efficiently, reduce manual intervention, and establish a reliable foundation for downstream analytics and data-driven decision-making.',
+    tech: 'React / TypeScript (Frontend Framework), Node.js (Backend Runtime), Python (AI/Data Backend), PostgreSQL (Relational Database), Cloudflare R2 (Object Storage) and N8N / CrewAI (Agentic AI & Orchestration)',
+    output: 'Automation for Data Cleaning Process i.e. coversion of raw data into valueable insights.',
+    report: 'https://github.com/abhi8hero/ganga-cognitive-intelligence'
   },
   p3: {
     title: 'IndEcoDash',
@@ -286,14 +287,14 @@ var projects = {
   p5: {
     title: 'Kaayaa',
     desc: 'AI & Agent Obeservability. Trace, monitor, and debug AI-native systems. KAAYAA is an AI-powered observability platform developed to provide end-to-end monitoring and analysis of AI workflows. The project integrates OpenTelemetry for instrumentation, n8n for workflow automation, and SigNoz as the observability platform to capture and visualize telemetry data in real time. Every stage of an AI workflow from receiving a user request to generating the final response is instrumented using OpenTelemetry, producing distributed traces and performance metrics that are exported to SigNoz for storage, analysis, and visualization.',
-    tech: 'N8N (Agentic AI), Signoz (Observability & Monitoring), Docker (Containerization), OpenTelemetry (Distributed Tracing), Miaoda (Typescript & React UI Technologies)',
+    tech: 'N8N (Agentic AI), Signoz (Observability & Monitoring), Docker (Containerization), OpenTelemetry (Distributed Tracing) and Miaoda (Typescript & React UI Technologies)',
     output: 'AI agents with E2E observability on SigNoz, Self-hosted inference observability (vLLM), SRE Sidekick with SigNoz MCP,n8n workflows with E2E observability and Self-healing infra with SigNoz metrics. When a user submits a request through the frontend dashboard, the backend processes the request and triggers the n8n Agentic AI workflow. As the workflow executes, OpenTelemetry automatically generates distributed traces, metrics, and logs for each significant operation. These telemetry records are exported to SigNoz, where they are stored, analyzed, and presented through dashboards and trace visualizations. The processed AI response is then returned to the frontend and displayed to the user.',
     report: 'reports/kaayaa-report.pdf'
   },
   p6: {
     title: 'Yaatra',
     desc: 'Yaatra is an AI-powered travel planning web application designed to simplify the entire trip planning process. It helps users create personalized travel itineraries based on their destination, budget, travel dates, and preferences. By combining modern web technologies with Agentic AI, Yaatra provides intelligent travel recommendations and organized trip management through a secure and user-friendly platform.',
-    tech: 'N8N ( Agentic AI ), Supabase ( Database & Authentication), Miaoda (Typescript & React UI Technologies)',
+    tech: 'N8N ( Agentic AI ), Supabase ( Database & Authentication) and Miaoda (Typescript & React UI Technologies)',
     output: 'The Yaatra application successfully generates a personalized AI-based travel itinerary based on the users destination, budget, travel dates, and preferences. The generated travel plan is securely stored in the database and displayed on the users dashboard for easy access and management. visit github repo on https://github.com/abhi8hero/yaatra',
     report: 'reports/yaatra-report.pdf'
   },
